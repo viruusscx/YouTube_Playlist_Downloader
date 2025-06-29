@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Playlist Downloader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1><img src="https://img.icons8.com/color/48/youtube-play.png" width="30"/> YouTube Playlist Downloader</h1>
+    <p>Download entire playlists in HD quality with one click</p>
+  </div>
+  <div class="container">
+    <h2>⬇️ Download Your Playlist</h2>
+    <label>YouTube Playlist URL</label>
+    <div class="input-wrapper">
+      <img src="https://img.icons8.com/color/48/youtube-play.png" width="20"/>
+      <input type="text" id="url" placeholder="https://www.youtube.com/playlist?list=..." />
+    </div>
+    <small>ℹ️ Paste the full YouTube playlist URL here</small>
+    <button onclick="startDownload()">⬇️ Download Playlist in HD</button>
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+    <div id="progress-text">⏳ Waiting for download...</div>
+    <div id="zipLink" style="display: none;">
+      <a href="/download-zip" download>📦 Download ZIP</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
